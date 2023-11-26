@@ -1,5 +1,8 @@
-function hello(name) {
-    console.log(`Hello ${name}`);
-}
+                  // Урок 8.1
 
-export { hello }
+
+// function hello(name) {
+//     console.log(`Hello ${name}`);
+// }
+
+// export { hello }

@@ -1,5 +1,8 @@
-function say() {
-    console.log("Hello world");
-}
+                  // Урок 8.1
 
-export { say }
+
+// function say() {
+//     console.log("Hello world");
+// }
+
+// export { say }

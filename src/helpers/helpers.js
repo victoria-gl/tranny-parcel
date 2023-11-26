@@ -1,16 +1,19 @@
-function add(a, b) {
-    return a + b;
-}
+                  // Урок 8.1
 
-function logger() {
-    console.log("Hello world");
-}
 
-function foo() {
-    console.log("foo");
-}
+// function add(a, b) {
+//     return a + b;
+// }
 
-const num = 5;
+// function logger() {
+//     console.log("Hello world");
+// }
 
-export { logger, foo, add, num };
+// function foo() {
+//     console.log("foo");
+// }
+
+// const num = 5;
+
+// export { logger, foo, add, num };
 // export default add;

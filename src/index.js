@@ -1,3 +1,5 @@
+                  // Урок 8.1
+
 // import { logger as log, foo, add } from "./helpers/helpers";
 // import * as esm from "./helpers/helpers";
 // import { logger, foo } from "./helpers/helpers";
@@ -17,3 +19,8 @@
 
 // hello("Dima")
 // say()
+
+
+
+
+                  // Урок 8.2
