@@ -45,7 +45,7 @@
 // console.log(value);
 // console.log(JSON.parse(value)); - видасть помилку, бо цей рядок не можливо розпарсити
 
-const LS_KEY = "my function";
+// const LS_KEY = "my function";
 
 // function add (a, b){
 //     return a + b;
@@ -60,14 +60,14 @@ const LS_KEY = "my function";
 //функції в LS не кладеться ні в якому вигляді
 
 
-const calc = {
-    a: 2,
-    b: 3,
-    add(){
-        return this.a + this.b
-    }
-}
+// const calc = {
+//     a: 2,
+//     b: 3,
+//     add(){
+//         return this.a + this.b
+//     }
+// }
 
-localStorage.setItem(LS_KEY, JSON.stringify(calc))
-console.log(JSON.parse(localStorage.getItem(LS_KEY)));
+// localStorage.setItem(LS_KEY, JSON.stringify(calc))
+// console.log(JSON.parse(localStorage.getItem(LS_KEY)));
 
