@@ -49,4 +49,49 @@
 // товари видаляються, а користувача перенаправляємо на сторінку Home
 
 
+import {createMarkup} from "./templates/templateProduct";
 
+import tools from "./product.json";
+
+// console.log(createMarkup);
+// console.log(instrument);
+
+const container = document.querySelector(".js-list");
+const product_LS_KEY = "checkout";
+
+container.insertAdjacentHTML("beforeend", createMarkup(tools));
+container.addEventListener("click", handleAdd);
+
+function handleAdd(event){
+    if(!event.target.classList.contains("js-btn")){
+        return;
+    }
+    
+    const product = event.target.closest(".js-product");
+    // console.log(product);
+    const productId = +product.dataset.id;
+    // console.log(productId);
+     const currentProduct = tools.find(({ id }) => id === productId);
+     const products = JSON.parse(localStorage.getItem(product_LS_KEY)) ?? [];
+     const index = products.findIndex(({ id }) => id === productId);
+
+     if(index !== -1){
+           products[index].qty += 1;
+     } else{
+           currentProduct.qty = 1;
+           products.push(currentProduct)
+     }
+
+     localStorage.setItem(product_LS_KEY, JSON.stringify(products))
+}
+
+// const idx = 1;         пояснення для product[index].qty += 1;
+// const arr = [
+//     {name: "Kate"},
+//     {name: "Alice"},
+//     {name: "Petya"}
+// ]
+
+// arr[idx].age = 25;
+
+// console.log(arr[1]);
